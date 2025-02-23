@@ -9,7 +9,7 @@ load_dotenv()
 
 class Chain:
     def __init__(self):
-        self.llm = ChatGroq(temperature=0, groq_api_key=os.getenv("GROQ_API_KEY"), model_name="llama-3.1-70b-versatile")
+        self.llm = ChatGroq(temperature=0, groq_api_key=os.getenv("GROQ_API_KEY"), model_name="mixtral-8x7b-32768")
 
     def extract_jobs(self, cleaned_text):
         prompt_extract = PromptTemplate.from_template(
@@ -39,14 +39,13 @@ class Chain:
             {job_description}
         
             ### INSTRUCTION:
-            You are Abhijat, a Machine learning engineer at I0I. I0I an AI & Software Consulting company specializing in the seamless 
-            integration of automated tools to enhance business processes. With a proven track record, we have successfully supported numerous
-            enterprises in scaling operations, optimizing workflows, reducing costs, and improving overall efficiency through customized solutions.
+            You are Abhijat, an undergraduate student at Galgotias University with a strong background in machine learning and multiple projects under your belt.
+            You are reaching out to a recruiter to express your interest in potential opportunities and to highlight your skills and experiences.
+            Your goal is to showcase your capabilities in machine learning and your passion for the field, emphasizing how your background aligns with the needs of their organization.
 
-            Your job is to write a cold email to the client regarding the job mentioned above describing the capability of I0I 
-            in fulfilling their needs.
-            Also add the most relevant ones from the following links to showcase I0I's portfolio: {link_list}
-            Remember you are Abhijat, AI/ML engineer at I0I. 
+            Your task is to write a cold email to the recruiter, introducing yourself and detailing your relevant experiences and projects in machine learning.
+            Also add the most relevant ones from the following links to showcase portfolio: {link_list}
+            Remember you are Abhijat, AI/ML engineering student at Galgotias University with specializing in AI & ML. 
             Do not provide a preamble.
             ### EMAIL (NO PREAMBLE):
 
