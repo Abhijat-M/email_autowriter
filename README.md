@@ -5,7 +5,7 @@
 ---
 
 ## **🌟 Features**
-- **LLM Integration**: Uses **Llama 3.1-70B** for high-quality email generation.  
+- **LLM Integration**: Uses **MISTRAL** for high-quality email generation.  
 - **Personalized Emails**: Automatically tailors content based on the provided job description link.  
 - **ChromaDB for Memory**: Employs ChromaDB for efficient storage and retrieval of context.  
 - **LangChain for Workflow**: Chains tasks like parsing job descriptions, analyzing context, and generating email drafts.  
@@ -17,7 +17,7 @@
 ## **💻 Tech Stack**
 - **Language**: Python  
 - **Key Technologies**:  
-  - **LLM**: Llama 3.1-70B  
+  - **LLM**: Mistral  
   - **Database**: ChromaDB  
   - **Framework**: LangChain  
   - **Processing**: Groq  
@@ -40,7 +40,7 @@ pip install -r requirements.txt
 ```
 
 ### **3. Set Up API Keys**
-- Obtain access to **Llama 3.1-70B API**, **ChromaDB**, and **LangChain**.  
+- Obtain access to **Mistral API**, **ChromaDB**, and **LangChain**.  
 - Create a `.env` file in the project root and add your keys:
   ```env
   GORQ_API_KEY=your_gorg_api_key
