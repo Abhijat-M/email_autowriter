@@ -6,3 +6,4 @@ streamlit
 pandas
 chromadb 
 beautifulsoup4
+gunicorn
