@@ -5,7 +5,7 @@
 ---
 
 ## **🌟 Features**
-- **LLM Integration**: Uses **MISTRAL** for high-quality email generation.  
+- **LLM Integration**: Uses **GEMMA** for high-quality email generation.  
 - **Personalized Emails**: Automatically tailors content based on the provided job description link.  
 - **ChromaDB for Memory**: Employs ChromaDB for efficient storage and retrieval of context.  
 - **LangChain for Workflow**: Chains tasks like parsing job descriptions, analyzing context, and generating email drafts.  
@@ -17,7 +17,7 @@
 ## **💻 Tech Stack**
 - **Language**: Python  
 - **Key Technologies**:  
-  - **LLM**: Mistral  
+  - **LLM**: GEMMA  
   - **Database**: ChromaDB  
   - **Framework**: LangChain  
   - **Processing**: Groq  
